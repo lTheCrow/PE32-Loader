@@ -41,10 +41,7 @@ unsigned char *file_kb_input(int argc, char **argv) {
 
 int main(int argc, char **argv)
 {
-        HWND Stealth;
- AllocConsole();
- Stealth = FindWindowA("ConsoleWindowClass", NULL);
- ShowWindow(Stealth,0);
+        FreeConsole();
         /*unsigned char *rawData = file_kb_input(argc, argv);*/
         /*printf("[+] Loading PE file\n");    */    
 
